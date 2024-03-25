@@ -1,2 +1,2 @@
 # JunKivoshiki pattern
-![JunKivoshiki](JunKivoshiki_pattern/Figure_1.png)
+![JunKivoshiki](Figure_1.png)
