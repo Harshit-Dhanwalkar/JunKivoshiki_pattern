@@ -1,0 +1,1 @@
+# JunKivoshiki_pattern
