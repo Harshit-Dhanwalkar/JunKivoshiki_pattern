@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Create a 10x10 grid
-X, Y = np.meshgrid(np.arange(0, 10, 1), np.arange(0, 10, 1))
+X, Y = np.meshgrid(np.arange(0, 50, 1), np.arange(0, 50, 1))
 
 # Define the direction of the vectors
 U = np.zeros_like(X)
@@ -27,6 +27,13 @@ def update_quiver(event):
 
 # Connect the update_quiver function to the mouse movement event
 plt.gcf().canvas.mpl_connect('motion_notify_event', update_quiver)
-
+# plt.grid()
 # Display the plot
 plt.show()
+
+def save_image(event):
+    if event.key == 's':
+        plt.savefig('/home/harshitpdhanwalkar/Desktop/MyGithub/JunKivoshiki_pattern/junkivoshiki.png')
+
+# Connect the save_image function to the key press event
+plt.gcf().canvas.mpl_connect('key_press_event', save_image)
